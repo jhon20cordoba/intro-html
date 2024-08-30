@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        td {
+            width: 100px;
+        }
+        .table-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primera Tabla -->
+    <div class="table-container">
+        <table>
+            <tr>
+                <td rowspan="2">Item 1</td>
+                <td colspan="3">Item 2</td>
+                <td rowspan="2">Item 5</td>
+                <td rowspan="2">Item 6</td>
+                <td rowspan="2">Item 7</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>Item 3</td>
+                <td>Item 4</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Segunda Tabla -->
+    <div class="table-container">
+        <table>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td colspan="2">Item 5</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Tercera Tabla -->
+    <div class="table-container">
+        <table>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Item 5</td>
+            </tr>
+            <tr>
+                <td colspan="2">Item 4</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Cuarta Tabla -->
+    <div class="table-container">
+        <table>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Item 4</td>
+            </tr>
+            <tr>
+                <td colspan="2">Item 5</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
