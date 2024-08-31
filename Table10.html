@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Principal de WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5ddd5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #075e54;
+            color: #ffffff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .header .icon-button {
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .chat-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .chat-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .chat-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .chat-item img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .chat-item .info {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-item .info .name {
+            font-weight: bold;
+        }
+
+        .chat-item .info .last-message {
+            color: #555;
+        }
+
+        .chat-item .info .timestamp {
+            color: #999;
+            font-size: 12px;
+        }
+
+        .chat-item .info .unread {
+            background-color: #075e54;
+            color: #ffffff;
+            border-radius: 50%;
+            padding: 3px 8px;
+            font-size: 12px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>WhatsApp</h1>
+            <button class="icon-button">⋮</button>
+        </header>
+        <ul class="chat-list">
+            <li class="chat-item">
+                <img src="https://via.placeholder.com/50" alt="Avatar">
+                <div class="info">
+                    <div class="name">Contacto 1</div>
+                    <div class="last-message">Último mensaje de Contacto 1</div>
+                    <div class="timestamp">10:30 AM</div>
+                </div>
+                <div class="unread">2</div>
+            </li>
+            <li class="chat-item">
+                <img src="https://via.placeholder.com/50" alt="Avatar">
+                <div class="info">
+                    <div class="name">Contacto 2</div>
+                    <div class="last-message">Último mensaje de Contacto 2</div>
+                    <div class="timestamp">9:15 AM</div>
+                </div>
+            </li>
+            <li class="chat-item">
+                <img src="https://via.placeholder.com/50" alt="Avatar">
+                <div class="info">
+                    <div class="name">Contacto 3</div>
+                    <div class="last-message">Último mensaje de Contacto 3</div>
+                    <div class="timestamp">8:45 AM</div>
+                </div>
+            </li>
+            <!-- Agrega más chats aquí -->
+        </ul>
+    </div>
+</body>
+</html>
+
